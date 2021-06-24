@@ -34,7 +34,6 @@ const Container = styled.div`
     text-align: center;
     text-transform: uppercase;
   }
-
   p {
     text-align: center;
     margin-top: 10px;
@@ -46,7 +45,7 @@ const Container = styled.div`
       font-size: 15px;
     }
     p {
-      padding: 15px;
+      padding: 10px 15px;
     }
   }
 `;
@@ -64,10 +63,8 @@ const ContainerContent = styled.div`
   }
 `;
 const Wrap = styled.div`
-  background: transparent
-    url("http://menncctv.com/front/assets/img/features-1.jpg") no-repeat center;
-
-  background-color: #fff;
+  background: #fff url("http://menncctv.com/front/assets/img/features-1.jpg")
+    no-repeat center;
   border-radius: 10px;
   display: flex;
   box-shadow: rgb(0 0 0 / 49%) 0px 26px 30px -10px,
@@ -84,17 +81,20 @@ const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   background: whitesmoke;
-  margin: 50px 20px 20px 20px;
+  margin: 70px 20px 5px 20px;
   padding: 20px;
   border-radius: 5px;
   opacity: 0.8;
   h1 {
     margin-bottom: 5px;
     font-size: 20px;
+    text-align: left;
+    margin-left: 20px;
   }
-
   p {
     font-size: 15px;
+    text-align: left;
+    margin-left: 20px;
   }
   @media (max-width: 768px) {
     h1,

@@ -6,7 +6,6 @@ export default function Footer() {
   return (
     <Container>
       <FooterTitle>Test</FooterTitle>
-
       <FooterBreak />
       <FooterContainer>
         {data.map((data) => (
@@ -20,7 +19,7 @@ export default function Footer() {
         ))}
       </FooterContainer>
       <FooterBreak />
-      <FooterText></FooterText>
+      <FooterText>&copy; dea-sarana-lestari 2021</FooterText>
     </Container>
   );
 }
@@ -32,7 +31,7 @@ const Container = styled.div`
   flex-direction: column;
 
   @media (max-width: 1000px) {
-    padding: 70px 30px;
+    padding: 10px 30px;
   }
 `;
 const FooterRow = styled.div`
@@ -53,14 +52,14 @@ const FooterColumn = styled.div`
 
 const FooterTitle = styled.p`
   color: #757575;
-  margin-bottom: 40px;
+  margin: 30px 0;
   font-size: 16px;
 `;
 
 const FooterText = styled.p`
   color: #757575;
   margin-bottom: 40px;
-  font-size: 13px;
+  font-size: 15px;
 `;
 
 const FooterBreak = styled.div`
