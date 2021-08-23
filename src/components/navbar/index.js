@@ -30,28 +30,60 @@ export default function Navbar({ toggle }) {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="home">
+              <NavLinks
+                to="home"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-10}
+                delay={200}
+                isDynamic={true}
+              >
                 <span>Home</span>
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="about">
+              <NavLinks
+                to="about"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-10}
+                delay={200}
+                isDynamic={true}
+              >
                 <span>About</span>
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="about">
+              <NavLinks
+                to="services"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-10}
+                delay={200}
+                isDynamic={true}
+              >
                 <span>Services</span>
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="about">
+              <NavLinks
+                to="footer"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-10}
+                delay={200}
+                isDynamic={true}
+              >
                 <span>Contacts</span>
               </NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/signin">Tracking</NavBtnLink>
+            <NavBtnLink to="/tracking">Tracking</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>
@@ -161,7 +193,7 @@ const NavLinks = styled(LinkS)`
   }
 `;
 
-const NavBtn = styled.nav`
+const NavBtn = styled.div`
   display: flex;
   align-items: center;
 
@@ -170,9 +202,9 @@ const NavBtn = styled.nav`
   }
 `;
 const NavBtnLink = styled(LinkR)`
-  border-radius: 10px;
-  background-color: #005792;
-  border: 1px solid #fff;
+  border-radius: 7px;
+  background-color: #125d98;
+  border: 1px solid #f9f9f9;
   color: white;
   white-space: nowrap;
   padding: 5px 25px;
@@ -183,7 +215,7 @@ const NavBtnLink = styled(LinkR)`
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.25s ease-in-out;
     background: #005792;
   }
 `;

@@ -1,15 +1,23 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 export default function Banner() {
   return (
     <Container>
-      <h4>Test we Carry</h4>
+      <h4>What we Carry</h4>
       <p>
         We learn about your products for them to arrive safely at their optimum
         condition.
       </p>
-      <MoreButton to="/">READ MORE</MoreButton>
+      <MoreButton
+        to="about"
+        smooth={true}
+        duration={500}
+        delay={500}
+        isDynamic={true}
+      >
+        READ MORE
+      </MoreButton>
     </Container>
   );
 }

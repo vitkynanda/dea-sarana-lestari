@@ -12,16 +12,48 @@ export default function Sidebar({ isOpen, toggle }) {
           <CloseIcon></CloseIcon>
         </Icon>
         <SidebarMenu>
-          <SidebarLink to="home" onClick={toggle}>
+          <SidebarLink
+            to="home"
+            smooth={true}
+            duration={500}
+            delay={200}
+            isDynamic={true}
+            onClick={toggle}
+            ignoreCancelEvents={false}
+          >
             Home
           </SidebarLink>
-          <SidebarLink to="about" onClick={toggle}>
+          <SidebarLink
+            to="about"
+            smooth={true}
+            duration={500}
+            delay={200}
+            offset={40}
+            isDynamic={true}
+            onClick={toggle}
+          >
             About
           </SidebarLink>
-          <SidebarLink to="services" onClick={toggle}>
+          <SidebarLink
+            to="services"
+            smooth={true}
+            duration={500}
+            spy={true}
+            offset={-10}
+            delay={200}
+            isDynamic={true}
+            onClick={toggle}
+          >
             Services
           </SidebarLink>
-          <SidebarLink to="contacts" onClick={toggle}>
+          <SidebarLink
+            to="footer"
+            smooth={true}
+            duration={500}
+            delay={200}
+            isDynamic={true}
+            onClick={toggle}
+          >
             Contacs
           </SidebarLink>
         </SidebarMenu>

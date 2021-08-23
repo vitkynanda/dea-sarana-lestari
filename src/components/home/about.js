@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function About() {
   return (
-    <Container>
+    <Container id="about">
       <h2>About us</h2>
       <ContainerContent>
         <Wrap>

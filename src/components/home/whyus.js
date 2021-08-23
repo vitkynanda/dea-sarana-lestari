@@ -11,8 +11,8 @@ export default function Whyus() {
         test description
       </p>
       <ContainerContent>
-        {datas.map((data) => (
-          <Wrap key={data}>
+        {datas.map((data, index) => (
+          <Wrap key={index}>
             <TextContainer>
               <h1>Air Freight</h1>
               <p>
